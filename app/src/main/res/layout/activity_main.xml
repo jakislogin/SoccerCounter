@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:gravity="center_horizontal"
-        android:text="0:0"
+        android:text="@string/initial_score"
         android:textColor="@android:color/black"
         android:textSize="80sp" />
 
@@ -36,7 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="Team A"
+                android:text="@string/team_a"
                 android:textSize="30sp" />
 
             <Button
@@ -44,7 +44,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:onClick="goalForTeamA"
-                android:text="Goal!"
+                android:text="@string/goal_button"
                 android:textSize="40sp" />
         </LinearLayout>
 
@@ -63,7 +63,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="Team B"
+                android:text="@string/team_b"
                 android:textSize="30sp" />
 
             <Button
@@ -71,7 +71,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:onClick="goalForTeamB"
-                android:text="Goal!"
+                android:text="@string/goal_button"
                 android:textSize="40sp" />
         </LinearLayout>
 
@@ -82,6 +82,6 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:onClick="resetScore"
-        android:text="Reset" />
+        android:text="@string/reset_button" />
 
 </LinearLayout>
