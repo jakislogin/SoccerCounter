@@ -22,8 +22,28 @@ public class MainActivity extends AppCompatActivity {
         scoreView.setText(String.valueOf(score));
     }
 
+    /**
+     * Adds 1 point for team A
+     */
     public void goalForTeamA(View v) {
         teamA = teamA + 1;
+        displayScore(teamA + ":" + teamB);
+    }
+
+    /**
+     * Adds 1 point for team B
+     */
+    public void goalForTeamB(View v) {
+        teamB = teamB + 1;
+        displayScore(teamA + ":" + teamB);
+    }
+
+    /**
+     * Resets score
+     */
+    public void resetScore(View v) {
+        teamA = 0;
+        teamB = 0;
         displayScore(teamA + ":" + teamB);
     }
 }
